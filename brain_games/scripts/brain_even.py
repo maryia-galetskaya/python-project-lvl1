@@ -1,8 +1,8 @@
 # random.randint(A, B) - случайное целое число N, A ≤ N ≤ B
 # три попытки tries = 3, while tries: ...
-from ast import arguments
+
 import random
-from turtle import right
+
 
 ans_yes = 'yes'
 ans_no = 'no'
