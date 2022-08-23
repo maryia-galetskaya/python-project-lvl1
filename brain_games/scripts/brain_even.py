@@ -42,19 +42,19 @@ def brain_even ():
         return (f'Congratulations, {name}!')
 
 
-print (welcome_user())
-print (brain_even())
+#print (welcome_user())
+#print (brain_even())
 
-#def main():  
-#    number()
-#    welcome_user()
+def main():  
+    #number()
+    welcome_user()
 #    even (num)     
 #       ЕСЛИ БЕЗ АРГУМЕНТА ПЕРЕДАЮ, ПОЛУЧАЮ even() missing 1 required positional argument: 'num'
 #       ЕСЛИ even (num), ВЫДАЁТ NameError: name 'num' is not defined. Did you mean: 'sum'?
 # ПОМОГИТЕ, пожалуйста, с этим разобраться
-#    brain_even ()
+    brain_even()
 
-#if __name__ == '__main__':
-#    main()
+if __name__ == '__main__':
+    main()
 
 
