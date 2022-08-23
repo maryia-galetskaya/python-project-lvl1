@@ -12,11 +12,14 @@ def number():
     generate_finish = 99
     return random.randint(generate_start, generate_finish)
 
-print('Welcome to the Brain Games!')
-name = input ('May I have your name? ')
+#print('Welcome to the Brain Games!')
+#name = input ('May I have your name? ')
 
 def welcome_user ():
-    return (f'Hello, {name}!')
+    print('Welcome to the Brain Games!')
+    name = input ('May I have your name? ')
+    print (f'Hello, {name}!')
+    return name
     
 def even (num):
     if num % 2 == 0:
@@ -26,7 +29,7 @@ def even (num):
         correct_answer = ans_no
         return correct_answer
 
-def brain_even ():
+def brain_even (user_name):
     # number = random.randint(1, 99)
     print ('Answer "yes" if the number is even, otherwise answer "no".')
     tries=3 
@@ -37,22 +40,18 @@ def brain_even ():
             print ('Correct!')
             tries-=1
         else: 
-            return (f"'{ask_answer}' is wrong answer ;(. Correct answer was '{(even(this_number))}'.\nLet's try again, {name}!")
+            print (f"'{ask_answer}' is wrong answer ;(. Correct answer was '{(even(this_number))}'.\nLet's try again, {user_name}!")
+            return #f"Let's try again, {name}!"
     else:
-        return (f'Congratulations, {name}!')
+        print (f'Congratulations, {user_name}!')
 
 
 #print (welcome_user())
 #print (brain_even())
 
-def main():  
-    #number()
-    welcome_user()
-#    even (num)     
-#       ЕСЛИ БЕЗ АРГУМЕНТА ПЕРЕДАЮ, ПОЛУЧАЮ even() missing 1 required positional argument: 'num'
-#       ЕСЛИ even (num), ВЫДАЁТ NameError: name 'num' is not defined. Did you mean: 'sum'?
-# ПОМОГИТЕ, пожалуйста, с этим разобраться
-    brain_even()
+def main():
+    user_name = welcome_user()
+    brain_even(user_name)
 
 if __name__ == '__main__':
     main()
