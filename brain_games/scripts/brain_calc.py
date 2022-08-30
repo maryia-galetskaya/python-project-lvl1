@@ -3,9 +3,20 @@ from structure_of_all_games import welcome_user, number, congrats
 import random
 
 def random_calc():
-    plus_minus_mult= ('+', '-', '*')
+    plus_minus_mult= ('+', '-')
     rand_calc_str = (random.choice(plus_minus_mult))
     return rand_calc_str
+
+def right_ans (number1, number2, sign):
+    if sign == '+':
+        right_answer = str (number1 + number2)
+        return right_answer
+    elif sign == '-':
+        right_answer = str (number1 - number2)
+        return right_answer
+    else: #sign == '*':
+        right_answer = str (number1 * number2)
+        return right_answer
 
 def brain_calc (user_name):
     #welcome_user()
@@ -14,21 +25,10 @@ def brain_calc (user_name):
     while tries:
         number1 = number()
         number2 = number() 
-        
         sign = random_calc()
         
-        if sign == '+':
-            right_answer = str (number1 + number2)
-            
-            return right_answer
-        elif sign == '-':
-            right_answer = str (number1 - number2)
-            return right_answer
-        else: #sign == '*':
-            right_answer = str (number1 * number2)
-
-        
         ask_answer = input (f'Question:{number1} {sign} {number2}\nYour answer: ')
+        right_answer = right_ans (number1, number2, sign)
         if ask_answer == right_answer:
             print ('Correct!')
             #tries-=1
