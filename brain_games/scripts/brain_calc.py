@@ -1,5 +1,6 @@
 #from brain_games.scripts.brain_even import number
-from structure_of_all_games import welcome_user, number, congrats
+from brain_games.scripts.structure_of_all_games import welcome_user, number
+#import structure_of_all_games
 import random
 
 def random_calc():
