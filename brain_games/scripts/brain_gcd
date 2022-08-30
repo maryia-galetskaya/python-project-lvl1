@@ -1,5 +1,5 @@
+from brain_games.scripts.structure_of_all_games import welcome_user, number, congrats, wrong_answer
 
-from structure_of_all_games import welcome_user, number, congrats, wrong_answer
 
 def to_know_gcd (num1, num2):
     if num1 == num2:
