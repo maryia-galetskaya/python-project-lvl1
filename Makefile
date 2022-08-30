@@ -14,5 +14,5 @@ brain-even:
 	poetry run brain-even
 brain-calc:
 	poetry run brain-calc
-make lint:
-	poetry run flake8 brain_games
+brain-gcd:
+	poetry run brain_gcd
