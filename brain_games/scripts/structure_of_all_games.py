@@ -3,9 +3,9 @@ import random
 ans_yes = 'yes'
 ans_no = 'no'
 
-def number():
+def random_number():
     generate_start = 1
-    generate_finish = 100
+    generate_finish = 30
     return random.randint(generate_start, generate_finish)
 
 #print('Welcome to the Brain Games!')
@@ -13,7 +13,10 @@ def number():
 
 def welcome_user ():
     print('Welcome to the Brain Games!')
-    name = input ('May I have your name? ')
+    name = input ('May I have your name?')
+    while name == '':
+        print('May I have your name? ', end='')
+        name = input()
     print (f'Hello, {name}!')
     return name
 
@@ -25,6 +28,13 @@ def even (num):
     else: 
         correct_answer = ans_no
         return correct_answer
+
+def check_answer (ask_answer, right_answer, user_name):
+    if ask_answer == str (right_answer):
+        print ('Correct!')
+    else:
+        print (f"'{ask_answer}' is wrong answer ;(. Correct answer was '{right_answer}'.\nLet's try again, {user_name}!")
+    
 
 def wrong_answer (ask_answer, right_answer, user_name):
     wrong_answer = (f"'{ask_answer}' is wrong answer ;(. Correct answer was '{right_answer}'.\nLet's try again, {user_name}!")
@@ -46,7 +56,7 @@ def congrats (user_name):
 #print (brain_even())
 
 def main():  
-    number ()
+    random_number ()
     user_name = welcome_user()
     #brain_even(user_name)
 

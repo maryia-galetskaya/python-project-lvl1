@@ -1,10 +1,10 @@
 #from brain_games.scripts.brain_even import number
-from brain_games.scripts.structure_of_all_games import welcome_user, number
+from structure_of_all_games import welcome_user, random_number
 #import structure_of_all_games
 import random
 
 def random_calc():
-    plus_minus_mult= ('+', '-')
+    plus_minus_mult= ('+', '-', '*')
     rand_calc_str = (random.choice(plus_minus_mult))
     return rand_calc_str
 
@@ -24,8 +24,8 @@ def brain_calc (user_name):
     print ('What is the result of the expression?')
     tries=3 
     while tries:
-        number1 = number()
-        number2 = number() 
+        number1 = random_number()
+        number2 = random_number() 
         sign = random_calc()
         
         ask_answer = input (f'Question:{number1} {sign} {number2}\nYour answer: ')

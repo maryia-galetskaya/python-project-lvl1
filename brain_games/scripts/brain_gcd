@@ -1,49 +1,26 @@
-from structure_of_all_games import welcome_user, number, congrats, wrong_answer
+from structure_of_all_games import welcome_user, random_number, congrats, wrong_answer, check_answer
 
 def to_know_gcd (num1, num2):
-    if num1 == num2:
-        return (num1)
+    if num1 < num2:
+        num1, num2 = num2, num1
+    while num2 != 0:
+        num1, num2 = num2, num1 % num2
+    return num1
 
-    if num1 > num2:
-        number1 = num1
-        number2 = num2 
-    elif num1 < num2:
-        number1 = num2
-        number2 = num1
-
-    if number1 % number2 == 0:
-        return number2
-    else:
-        a = number1
-        b = number2
-        c = number1 % number2
-        while (c>0):
-            a = b
-            b = c
-            c = a % b
-            if c == 0:
-                return b
 
 def brain_gcd (user_name):
     print ('Find the greatest common divisor of given numbers.')
     tries=3 
     while tries:
-        number1 = number()
-        number2 = number()
+        number1 = random_number()
+        number2 = random_number()
 
         ask_answer = input (f'Question:{number1} {number2}\nYour answer: ')
         right_answer = to_know_gcd (number1, number2)
-
         if ask_answer == str (right_answer):
             print ('Correct!')
-            #tries-=1
         else:
-            #wrong_answer = (f"'{ask_answer}' is wrong answer ;(. Correct answer was '{right_answer}'.\nLet's try again, {user_name}!")
-            #print (wrong_answer)
-            #return wrong_answer
-            wr = wrong_answer (ask_answer, right_answer, user_name)
-            return wr
-    
+            return wrong_answer (ask_answer, right_answer, user_name)
         tries-=1
     else:
         print (congrats(user_name))

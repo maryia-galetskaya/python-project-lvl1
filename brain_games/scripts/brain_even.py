@@ -7,7 +7,7 @@ import random
 ans_yes = 'yes'
 ans_no = 'no'
 
-def number():
+def random_number():
     generate_start = 1
     generate_finish = 99
     return random.randint(generate_start, generate_finish)
@@ -34,7 +34,7 @@ def brain_even (user_name):
     print ('Answer "yes" if the number is even, otherwise answer "no".')
     tries=3 
     while tries:
-        this_number = number()
+        this_number = random_number()
         ask_answer = input (f'Question:{this_number}\nYour answer: ')
         if even(this_number) == ask_answer: #or odd() == ask_answer:
             print ('Correct!')

@@ -7,7 +7,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 
 # This program built for i386-apple-darwin11.3.0
 
-# Make data base, printed on Tue Aug 30 14:53:27 2022
+# Make data base, printed on Tue Sep  6 21:36:12 2022
 
 # Variables
 
@@ -22,6 +22,9 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # automatic
 @F = $(notdir $@)
 # makefile
+ 
+make: *** No rule to make target `all'.  Stop.
+
 CURDIR := /Users/maryiagaletskaya/python-project-lvl1
 # makefile
 SHELL = /bin/sh
@@ -62,11 +65,11 @@ HOME = /Users/maryiagaletskaya
 # default
 MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/maryiagaletskaya/Library/Application Support/Code - Insiders/CachedData/16faaf4eb07424d5d7dba7d12bffd64309c283f7
+VSCODE_CODE_CACHE_PATH = /Users/maryiagaletskaya/Library/Application Support/Code - Insiders/CachedData/d17726fe4beae5abe87ba9e9429cd298be8b53c4
 # environment
 LOGNAME = maryiagaletskaya
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
@@ -96,7 +99,7 @@ TMPDIR = /var/folders/rf/7pgb5jsx0fq2gcm9vwgv5h6c0000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/maryiagaletskaya/Library/Application Support/Code - Insiders/1.71.0-insider-main.sock
+VSCODE_IPC_HOOK = /Users/maryiagaletskaya/Library/Application Support/Code - Insiders/1.72.0-insider-main.sock
 # environment
 MallocNanoZone = 0
 # makefile
@@ -106,7 +109,7 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCodeInsiders.3233644.3233650
+XPC_SERVICE_NAME = application.com.microsoft.VSCodeInsiders.3307534.3307540
 # environment
 HOMEBREW_PREFIX = /opt/homebrew
 # automatic
@@ -134,7 +137,7 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 9308
+VSCODE_PID = 35095
 # variable set hash-table stats:
 # Load=62/1024=6%, Rehash=0, Collisions=1/85=1%
 
@@ -171,6 +174,14 @@ all:
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
+brain-gcd:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 18):
+	poetry run brain_gcd
+	
+
 brain-games:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -188,7 +199,7 @@ brain-games:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-08-30 14:42:15
+#  Last modified 2022-08-30 18:56:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -249,7 +260,7 @@ install:
 	
 
 # files hash-table stats:
-# Load=12/1024=1%, Rehash=0, Collisions=0/24=0%
+# Load=13/1024=1%, Rehash=0, Collisions=0/25=0%
 # VPATH Search Paths
 
 # No `vpath' search paths.
@@ -261,8 +272,6 @@ install:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Tue Aug 30 14:53:27 2022
+# Finished Make data base on Tue Sep  6 21:36:12 2022
 
  
-make: *** No rule to make target `all'.  Stop.
-
