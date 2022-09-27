@@ -44,9 +44,10 @@ def brain_progression(user_name):
         ask_answer = input('Your answer: ')  # 8) ask answer
         if ask_answer == str (right_answer): # 9) got answer and compare to right one
             print ('Correct!')
+            tries-=1
         else:
             return wrong_answer (ask_answer, right_answer, user_name)
-        tries-=1
+        #tries-=1
     else:
         return (congrats(user_name))
 

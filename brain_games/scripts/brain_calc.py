@@ -1,7 +1,21 @@
 #from brain_games.scripts.brain_even import number
-from structure_of_all_games import welcome_user, random_number
+#from structure_of_all_games import welcome_user, random_number
 #import structure_of_all_games
 import random
+
+def random_number():
+    generate_start = 1
+    generate_finish = 30
+    return random.randint(generate_start, generate_finish)
+
+def welcome_user ():
+    print('Welcome to the Brain Games!')
+    name = input ('May I have your name? ')
+    while name == '':
+        print('May I have your name? ', end='')
+        name = input()
+    print (f'Hello, {name}!')
+    return name
 
 def random_calc():
     plus_minus_mult= ('+', '-', '*')
