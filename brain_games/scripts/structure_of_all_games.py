@@ -1,10 +1,6 @@
 import random
 
 
-ans_yes = 'yes'
-ans_no = 'no'
-
-
 def random_number():
     generate_start = 1
     generate_finish = 30
@@ -13,40 +9,23 @@ def random_number():
 
 def welcome_user():
     print('Welcome to the Brain Games!')
-    name = input ('May I have your name? ')
+    name = input('May I have your name? ')
     while name == '':
-        print('May I have your name? ', end='')
+        print('May I have your name? ', end = '')
         name = input()
-    print (f'Hello, {name}!')
+    print(f'Hello, {name}!')
     return name
 
-    
-def even(num):
-    if num % 2 == 0:
-        correct_answer = ans_yes
-        return correct_answer
-    else: 
-        correct_answer = ans_no
-        return correct_answer
-
-
-def check_answer(ask_answer, right_answer, user_name):
-    if ask_answer == str(right_answer):
-        return('Correct!')
-    else:
-        return(f"'{ask_answer}' is wrong answer ;(. Correct answer was '{right_answer}'.\nLet's try again, {user_name}!")
-
-        
-    
 
 def wrong_answer(ask_answer, right_answer, user_name):
-    wrong_answer = (f"'{ask_answer}' is wrong answer ;(. Correct answer was '{right_answer}'.\nLet's try again, {user_name}!")
+    wrong_answer = (f"'{ask_answer}' is wrong answer ;(. Correct answer "
+    f"was '{right_answer}'.\nLet's try again, {user_name}!")
     print(wrong_answer)
     #return wrong_answer
 
 
 def congrats(user_name):
-    congratulations = (f"Congratulations, {user_name}!")
+    congratulations = (f'Congratulations, {user_name}!')
     print(congratulations)
 
 
