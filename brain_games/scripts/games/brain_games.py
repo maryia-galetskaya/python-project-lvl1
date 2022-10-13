@@ -8,7 +8,7 @@ def welcome_user():
 
 def brain_games():
     print('Welcome to the Brain Games!')
-    #cli.welcome_user()
+    # cli.welcome_user()
     welcome_user()
 
 
