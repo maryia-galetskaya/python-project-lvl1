@@ -1,4 +1,4 @@
-from structure_of_all_games import welcome_user, random_number, congrats, wrong_answer
+from brain_games.scripts.structure_of_all_games import welcome_user, wrong_answer, congrats, random_number
 import random
 
 def random_calc():
