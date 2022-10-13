@@ -43,7 +43,7 @@ def brain_progression(user_name):
             print('Correct!')
             tries -= 1
         else:
-            wrong_answer (ask_answer, right_answer, user_name)
+            wrong_answer(ask_answer, right_answer, user_name)
             break
     else:
         congrats(user_name)
@@ -53,6 +53,6 @@ def main():
     user_name = welcome_user()
     brain_progression(user_name)
 
-    
+
 if __name__ == '__main__':
     main()
