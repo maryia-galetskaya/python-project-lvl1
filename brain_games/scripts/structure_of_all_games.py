@@ -11,7 +11,7 @@ def welcome_user():
     print('Welcome to the Brain Games!')
     name = input('May I have your name? ')
     while name == '':
-        print('May I have your name? ', end = '')
+        print('May I have your name? ', end='')
         name = input()
     print(f'Hello, {name}!')
     return name
@@ -19,9 +19,8 @@ def welcome_user():
 
 def wrong_answer(ask_answer, right_answer, user_name):
     wrong_answer = (f"'{ask_answer}' is wrong answer ;(. Correct answer "
-    f"was '{right_answer}'.\nLet's try again, {user_name}!")
+        f"was '{right_answer}'.\nLet's try again, {user_name}!")
     print(wrong_answer)
-    #return wrong_answer
 
 
 def congrats(user_name):
@@ -32,10 +31,7 @@ def congrats(user_name):
 def main():  
     random_number()
     user_name = welcome_user()
-    # check_answer()
-    # wrong_answer()
     congrats(user_name)
-    # brain_even(user_name)
 
 
 if __name__ == '__main__':
