@@ -1,4 +1,6 @@
-from brain_games.scripts.structure_of_all_games import welcome_user, wrong_answer, congrats, random_number
+from brain_games.scripts.structure_of_all_games import welcome_user
+from brain_games.scripts.structure_of_all_games import wrong_answer, congrats
+from brain_games.scripts.structure_of_all_games import random_number
 import random
 
 
