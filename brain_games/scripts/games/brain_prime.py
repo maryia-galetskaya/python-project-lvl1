@@ -1,8 +1,4 @@
-from structure_of_all_games import welcome_user, wrong_answer, congrats, random_number
-# make function of prime
-# generate number
-# show it
-# that's all
+from brain_games.scripts.structure_of_all_games import welcome_user, wrong_answer, congrats, random_number
 
 
 def isPrime(number):
