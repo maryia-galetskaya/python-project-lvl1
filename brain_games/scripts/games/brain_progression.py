@@ -3,7 +3,7 @@ import random
 
 
 def length_of_pr ():
-    min_len_of_row = 7
+    min_len_of_row = 5
     max_len_of_row = 11
     return random.randint(min_len_of_row, max_len_of_row)
 
