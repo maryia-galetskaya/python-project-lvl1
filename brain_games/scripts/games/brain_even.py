@@ -24,7 +24,7 @@ def brain_even(user_name):
     tries = 3 
     while tries:
         this_number = random_number()
-        ask_answer = input(f'Question:{this_number}\nYour answer: ')
+        ask_answer = input(f'Question: {this_number}\nYour answer: ')
         if even(this_number) == ask_answer: #or odd() == ask_answer:
             print('Correct!')
             tries-=1
