@@ -19,7 +19,7 @@ def welcome_user():
 
 def wrong_answer(ask_answer, right_answer, user_name):
     wrong_answer = (f"'{ask_answer}' is wrong answer ;(. Correct answer "
-        f"was '{right_answer}'.\nLet's try again, {user_name}!")
+                    f"was '{right_answer}'.\nLet's try again, {user_name}!")
     print(wrong_answer)
 
 
