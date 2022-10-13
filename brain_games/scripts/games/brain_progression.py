@@ -36,7 +36,7 @@ def brain_progression(user_name):
         row.insert(0, 'Question: ')
 
         print(*row)
-        ask_answer = input('Your answer: ')  # 8) ask answer
+        ask_answer = input('Your answer:')  # 8) ask answer
         if ask_answer == str(right_answer): # 9) got answer and compare to right one
             print('Correct!')
             tries-=1
