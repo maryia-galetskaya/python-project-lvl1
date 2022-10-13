@@ -1,5 +1,6 @@
 import random
-from structure_of_all_games import welcome_user, wrong_answer, congrats, random_number
+from ../structure_of_all_games import welcome_user, wrong_answer, congrats, random_number
+from ..structure_of_all_games import welcome_user, wrong_answer, congrats, random_number
 
 ans_yes = 'yes'
 ans_no = 'no'
