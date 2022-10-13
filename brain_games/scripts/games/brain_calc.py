@@ -32,6 +32,7 @@ def brain_calc(user_name):
             tries-=1
         else:
             wrong_answer(ask_answer, right_answer, user_name)
+            break
     else:
         congrats(user_name)
 
