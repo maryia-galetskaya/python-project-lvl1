@@ -1,13 +1,8 @@
-import random
-#from ../structure_of_all_games import welcome_user, wrong_answer, congrats, random_number
-from ..structure_of_all_games import welcome_user, wrong_answer, congrats, random_number
 from brain_games.scripts.structure_of_all_games import welcome_user, wrong_answer, congrats, random_number
+
 
 ans_yes = 'yes'
 ans_no = 'no'
-
-#print('Welcome to the Brain Games!')
-#name = input ('May I have your name? ')
 
 
 def even(num):
@@ -18,6 +13,7 @@ def even(num):
         correct_answer = ans_no
         return correct_answer
 
+
 def brain_even(user_name):
     # number = random.randint(1, 99)
     print('Answer "yes" if the number is even, otherwise answer "no".')
@@ -25,15 +21,14 @@ def brain_even(user_name):
     while tries:
         this_number = random_number()
         ask_answer = input(f'Question: {this_number}\nYour answer: ')
-        if even(this_number) == ask_answer: #or odd() == ask_answer:
+        if even(this_number) == ask_answer:
             print('Correct!')
-            tries-=1
+            tries -= 1
         else: 
-            wrong_answer(ask_answer, even(this_number), user_name )
+            wrong_answer(ask_answer, even(this_number), user_name)
             break
     else:
         congrats(user_name)
-
 
 
 def main():
@@ -42,5 +37,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
