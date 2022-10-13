@@ -1,4 +1,6 @@
-from brain_games.scripts.structure_of_all_games import welcome_user, wrong_answer, congrats, random_number
+from brain_games.scripts.structure_of_all_games import welcome_user
+from brain_games.scripts.structure_of_all_games import wrong_answer, congrats
+from brain_games.scripts.structure_of_all_games import random_number
 
 
 def to_know_gcd(num1, num2):
@@ -11,15 +13,14 @@ def to_know_gcd(num1, num2):
 
 def brain_gcd(user_name):
     print('Find the greatest common divisor of given numbers.')
-    tries = 3 
+    tries = 3
     while tries:
-        number1, number2 = random_number(), random_number() 
-        #number2 = random_number() 
+        number1, number2 = random_number(), random_number()
         ask_answer = input(f'Question: {number1} {number2}\nYour answer: ')
         right_answer = to_know_gcd(number1, number2)
         if ask_answer == str(right_answer):
             print('Correct!')
-            tries-=1
+            tries -= 1
         else:
             wrong_answer(ask_answer, right_answer, user_name)
             break
