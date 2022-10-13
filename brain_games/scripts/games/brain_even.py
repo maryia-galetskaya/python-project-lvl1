@@ -11,7 +11,7 @@ def even(num):
     if num % 2 == 0:
         correct_answer = ans_yes
         return correct_answer
-    else: 
+    else:
         correct_answer = ans_no
         return correct_answer
 
@@ -19,14 +19,14 @@ def even(num):
 def brain_even(user_name):
     # number = random.randint(1, 99)
     print('Answer "yes" if the number is even, otherwise answer "no".')
-    tries = 3 
+    tries = 3
     while tries:
         this_number = random_number()
         ask_answer = input(f'Question: {this_number}\nYour answer: ')
         if even(this_number) == ask_answer:
             print('Correct!')
             tries -= 1
-        else: 
+        else:
             wrong_answer(ask_answer, even(this_number), user_name)
             break
     else:
@@ -37,5 +37,6 @@ def main():
     user_name = welcome_user()
     brain_even(user_name)
 
+    
 if __name__ == '__main__':
     main()
