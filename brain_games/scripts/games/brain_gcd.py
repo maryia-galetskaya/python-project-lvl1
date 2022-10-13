@@ -15,7 +15,7 @@ def brain_gcd(user_name):
     while tries:
         number1, number2 = random_number(), random_number() 
         #number2 = random_number() 
-        ask_answer = input(f'Question:{number1} {number2}\nYour answer: ')
+        ask_answer = input(f'Question: {number1} {number2}\nYour answer: ')
         right_answer = to_know_gcd(number1, number2)
         if ask_answer == str(right_answer):
             print('Correct!')
