@@ -28,7 +28,7 @@ def congrats(user_name):
     print(congratulations)
 
 
-def main():  
+def main():
     random_number()
     user_name = welcome_user()
     congrats(user_name)
