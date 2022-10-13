@@ -21,7 +21,7 @@ def brain_prime(user_name):
     while tries:
         asked_number = random_number()
         right_answer = isPrime(asked_number)
-        ask_answer = input(f'Question:{asked_number}\nYour answer: ')
+        ask_answer = input(f'Question: {asked_number}\nYour answer: ')
         if ask_answer == str(right_answer): 
             print('Correct!')
             tries-=1
