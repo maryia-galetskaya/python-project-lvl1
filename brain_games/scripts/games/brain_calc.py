@@ -24,7 +24,7 @@ def brain_calc(user_name):
         number1 = random_number()
         number2 = random_number() 
         sign = random_calc()
-        ask_answer = input(f'Question:{number1} {sign} {number2}\nYour answer: ')
+        ask_answer = input(f'Question: {number1} {sign} {number2}\nYour answer: ')
         right_answer = right_ans (number1, number2, sign)
 
         if ask_answer == right_answer:
