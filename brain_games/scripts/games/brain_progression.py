@@ -33,10 +33,10 @@ def brain_progression(user_name):
         hidden_index = random.randint(0, len(row)-1)
         right_answer = row [hidden_index]
         row[hidden_index] = '..'
-        row.insert(0, 'Question: ')
+        row.insert(0, 'Question:')
 
         print(*row)
-        ask_answer = input('Your answer:')  # 8) ask answer
+        ask_answer = input('Your answer: ')  # 8) ask answer
         if ask_answer == str(right_answer): # 9) got answer and compare to right one
             print('Correct!')
             tries-=1
