@@ -18,7 +18,7 @@ def isPrime(number):
 
 
 def brain_prime(user_name):
-    print ('Answer "yes" if given number is prime. Otherwise answer "no".')
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
     tries = 3
     while tries:
         asked_number = random_number()
@@ -38,6 +38,6 @@ def main():
     user_name = welcome_user()
     brain_prime(user_name)
 
-    
+
 if __name__ == '__main__':
     main()
